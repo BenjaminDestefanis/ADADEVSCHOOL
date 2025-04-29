@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend           # Construye la imagen usando backend/Dockerfile
+    ports:
+      - "4000:4000"           # Mapea puerto 4000 del contenedor al host
+    volumes:
+      - ./backend:/app          # Sincroniza código local y contenedor para hot-reload
+    depends_on:
+      - db                      # Espera a que el servicio db esté listo
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+  db:
+    image: postgres:15         # Usa la imagen oficial de Postgres v15
+    environment:
+      POSTGRES_USER: dev        # Usuario de la BD
+      POSTGRES_PASSWORD: dev    # Contraseña de la BD
+      POSTGRES_DB: e_learning   # Nombre de la BD
+    ports:
+      - "5432:5432"           # Mapea puerto de Postgres al host

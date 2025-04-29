@@ -1,0 +1,19 @@
+{
+  "name": "adadevschool",
+  "version": "1.0.0",
+  "description": "Academia de IDIOMAS y IOT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminDestefanis/ADADEVSCHOOL.git"
+  },
+  "author": "Benjamin Baigorria / Marina Villegas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenjaminDestefanis/ADADEVSCHOOL/issues"
+  },
+  "homepage": "https://github.com/BenjaminDestefanis/ADADEVSCHOOL#readme"
+}
