@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Manejo de rutas
 import Home from './pages/Home';
 import Courses from './pages/Courses';
 import News from './pages/News';
@@ -10,7 +10,7 @@ import Footer from './components/common/Footer';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen"> {/* Diseños responsive [flex] */}
         <Navbar />
         <main className="flex-grow container mx-auto px-4 py-8">
           <Routes>
