@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:80" # Mapeo de puertos (3000 local a 80 en el contenedor)
+    volumes:
+      - ./src:/app/src # Volumen para desarrollo (cambios en caliente)
+    environment:
+      - NODE_ENV=development # Variables de entorno
+    restart: unless-stopped # Reinicio automático
+
+
+    
+
+    
+
+    
+
+    
