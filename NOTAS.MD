@@ -75,3 +75,15 @@ CMS (blog)
 Strapi o Ghost (Headless)
 
 Gestión de contenido separada, API-friendly.
+
+
+
+# Manejo de DOCKER
+
+- Construccion de imagen
+
+```terminal  
+// Construccion de imagen
+docker-compose build 
+// Inicio del contenedor
+docker-compose up
