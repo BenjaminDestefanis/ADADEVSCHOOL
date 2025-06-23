@@ -11,29 +11,41 @@ def es_par(n):
     return 
 
 def invertir_cadena(cadena):
-    return cadena[::-1]
+    # 1.C. INVERTIR
+    # La funcion recibe un string, y deve devolverlo invertido.
+    return 
 
 def factorial(n):
-    resultado = 1
-    for i in range(2, n + 1):
-        resultado *= i
-    return resultado
+    # 1.D. FACTORIAL
+    # La funcion recibe un numero, y debe retornar el factorial de ese numero.
+    return
 
 def contar_vocales(texto):
-    return sum(1 for letra in texto.lower() if letra in 'aeiou')
+    # 1.E. CONTADOR VOCALES
+    # La funcion recibe un string, y debe retornar la CANTIDAD de vocales.
+    return
 
 def maximo(lista):
-    return max(lista)
+    # 1.F. MAXIMO
+    # La funcion recibe un lista que contiene numeros, debe retornar el numero mas grande de la lista.
+    return
 
 def es_palindromo(cadena):
-    cadena = cadena.lower().replace(" ", "")
-    return cadena == cadena[::-1]
+    # 1.G. PALINDROMO
+    # Debe retornar un booleano de acuerdo si la palabra es palindromo
+    return 
 
 def cuadrados(lista):
+    # 1.H. CUADRADOS
+    
     return [x**2 for x in lista]
 
 def sumar_lista(lista):
+    # 1.I. SUMA LISTA
+    # 
     return sum(lista)
 
 def contar_palabra(texto, palabra):
+    # 1.J. CONTADOR PALABRAS 
+    # 
     return texto.lower().split().count(palabra.lower())

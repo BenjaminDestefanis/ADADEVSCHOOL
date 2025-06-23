@@ -6,18 +6,6 @@ import ejercicios  # Asegúrate de que ambos archivos estén en la misma carpeta
 
 init(autoreset=True)
 
-""" class ColorResult(unittest.TextTestResult):
-    def addSuccess(self, test):
-        super().addSuccess(test)
-        print(Fore.GREEN + f"✔ PASÓ: {test}")
-
-    def addFailure(self, test, err):
-        super().addFailure(test, err)
-        print(Fore.RED + f"✖ FALLÓ: {test}")
-
-    def addError(self, test, err):
-        super().addError(test, err)
-        print(Fore.MAGENTA + f"⚠ ERROR: {test}") """
 
 class TestEjercicios(unittest.TestCase):
 
