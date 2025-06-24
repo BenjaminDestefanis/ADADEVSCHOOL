@@ -50,21 +50,22 @@ def contar_palabra(texto, palabra):
     # Falta analizar para definir
     return texto.lower().split().count(palabra.lower())
 
-# ---
+# ------------------------ SECCION 2
 
 def obtener_mayor(a, b, c):
-    return max(a, b, c)
+    # 1.K. OBTENER MAYOR
+    # La funcion recibe 3 numeros, debe retornar el mayor.
+    return 
 
 def convertir_a_celsius(fahrenheit):
-    return (fahrenheit - 32) * 5 / 9
+    # 1.H. CONVERTOR A CELSIUS
+    # La funcion recive un numero en grados fahrenheit, debe retornar el el valor en celcius 
+    return
 
 def numero_es_primo(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+    # 1.I. NUMERO PRIMO
+    # La funcion recibe un numero, debe retornar un booleano de acuerdo si el numero es o no primo.
+    return
 
 def contar_digitos(numero):
     return len(str(abs(numero)))

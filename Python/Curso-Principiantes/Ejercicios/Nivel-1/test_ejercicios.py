@@ -77,8 +77,5 @@ class TestEjerciciosExtra(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    """ suite = unittest.defaultTestLoader.loadTestsFromTestCase(TestEjercicios)
-    runner = unittest.TextTestRunner(resultclass=lambda *args, **kwargs: ColorResult(*args, **kwargs))
-    runner.run(suite) """
 
 
