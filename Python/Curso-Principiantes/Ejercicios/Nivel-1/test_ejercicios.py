@@ -41,6 +41,40 @@ class TestEjercicios(unittest.TestCase):
     def test_contar_palabra(self):
         self.assertEqual(ejercicios.contar_palabra("Hola mundo hola", "hola"), 2)
 
+
+class TestEjerciciosExtra(unittest.TestCase):
+
+    def test_obtener_mayor(self):
+        self.assertEqual(ejercicios.obtener_mayor(5, 9, 3), 9)
+
+    def test_convertir_a_celsius(self):
+        self.assertAlmostEqual(ejercicios.convertir_a_celsius(212), 100.0)
+
+    def test_numero_es_primo(self):
+        self.assertTrue(ejercicios.numero_es_primo(7))
+        self.assertFalse(ejercicios.numero_es_primo(4))
+
+    def test_contar_digitos(self):
+        self.assertEqual(ejercicios.contar_digitos(12345), 5)
+
+    def test_suma_digitos(self):
+        self.assertEqual(ejercicios.suma_digitos(123), 6)
+
+    def test_encontrar_menor(self):
+        self.assertEqual(ejercicios.encontrar_menor([3, 1, 5]), 1)
+
+    def test_duplicar_elementos(self):
+        self.assertEqual(ejercicios.duplicar_elementos([1, 2]), [2, 4])
+
+    def test_remover_duplicados(self):
+        self.assertEqual(set(ejercicios.remover_duplicados([1, 1, 2])), {1, 2})
+
+    def test_obtener_promedio(self):
+        self.assertEqual(ejercicios.obtener_promedio([2, 4, 6]), 4)
+
+    def test_unir_cadenas(self):
+        self.assertEqual(ejercicios.unir_cadenas(["hola", "mundo"]), "hola mundo")
+
 if __name__ == '__main__':
     unittest.main()
     """ suite = unittest.defaultTestLoader.loadTestsFromTestCase(TestEjercicios)

@@ -37,15 +37,52 @@ def es_palindromo(cadena):
 
 def cuadrados(lista):
     # 1.H. CUADRADOS
-    
-    return [x**2 for x in lista]
+    # La funcion recibe una lista y debe retornar una lista con el valor de cada numero elevado al cuadrado.
+    return
 
 def sumar_lista(lista):
     # 1.I. SUMA LISTA
-    # 
-    return sum(lista)
+    # La funcion recibe una lista con numeros, y debe retornar la suma de todos los numeros.
+    return
 
 def contar_palabra(texto, palabra):
-    # 1.J. CONTADOR PALABRAS 
-    # 
+    # 1.J. CONTADOR PALABRAS
+    # Falta analizar para definir
     return texto.lower().split().count(palabra.lower())
+
+# ---
+
+def obtener_mayor(a, b, c):
+    return max(a, b, c)
+
+def convertir_a_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5 / 9
+
+def numero_es_primo(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def contar_digitos(numero):
+    return len(str(abs(numero)))
+
+def suma_digitos(numero):
+    return sum(int(d) for d in str(abs(numero)))
+
+def encontrar_menor(lista):
+    return min(lista)
+
+def duplicar_elementos(lista):
+    return [x * 2 for x in lista]
+
+def remover_duplicados(lista):
+    return list(set(lista))
+
+def obtener_promedio(lista):
+    return sum(lista) / len(lista)
+
+def unir_cadenas(lista_cadenas):
+    return " ".join(lista_cadenas)
